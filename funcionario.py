@@ -13,6 +13,9 @@ class Estagiario(Funcionario):
         super().__init__(indice, nome, login, 2500)
         self.ano_matricula = ano_matricula
 
+    def info(self):
+        return super().info() + f" - Ano de matrícula: n{self.ano_matricula}"
+
 
 
 class Tecnico(Funcionario):
